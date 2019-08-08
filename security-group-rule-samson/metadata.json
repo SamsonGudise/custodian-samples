@@ -1,0 +1,75 @@
+{
+  "policy": {
+    "name": "security-group-rule-samson",
+    "resource": "security-group",
+    "filters": [
+      {
+        "type": "ingress",
+        "Cidr": {
+          "value": "0.0.0.0/0",
+          "key": "CidrIp"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "type": "remove-permissions",
+        "ingress": "matched"
+      }
+    ]
+  },
+  "version": "0.8.40.0",
+  "execution": {
+    "id": "ddfa17e9-10d0-4bb2-a25b-d5d25bf01cd6",
+    "start": 1550089736.1536052,
+    "end_time": 1550089737.114932,
+    "duration": 0.9613268375396729
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": null,
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": true,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "security-group-remediate-manual.yml"
+    ],
+    "policy_filter": null,
+    "resource_type": null,
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeSecurityGroups": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2019-02-13T13:28:57.096959",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2019-02-13T13:28:57.096979",
+      "Value": 0.9139289855957031,
+      "Unit": "Seconds"
+    }
+  ]
+}

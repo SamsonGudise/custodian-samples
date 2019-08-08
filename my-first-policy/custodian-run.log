@@ -1,0 +1,7 @@
+2019-02-07 12:38:56,326 - custodian.cache - WARNING - Could not save cache /Users/samson/.cache/cloud-custodian.cache err: [Errno 2] No such file or directory: '/Users/samson/.cache/cloud-custodian.cache'
+2019-02-07 12:38:56,327 - custodian.cache - INFO - Generating Cache directory: /Users/samson/.cache.
+2019-02-07 12:38:56,327 - custodian.policy - INFO - policy: my-first-policy resource:ec2 region:us-east-1 count:0 time:0.54
+2019-02-07 12:45:14,395 - custodian.policy - INFO - policy: my-first-policy resource:ec2 region:us-east-1 count:1 time:0.69
+2019-02-07 12:45:14,431 - custodian.actions - INFO - Stop 1 of 1 instances
+2019-02-07 12:45:15,160 - custodian.policy - INFO - policy: my-first-policy action: stop resources: 1 execution_time: 0.73
+2019-02-07 12:46:54,892 - custodian.policy - INFO - policy: my-first-policy resource:ec2 region:us-east-1 count:1 time:0.05

@@ -1,0 +1,73 @@
+{
+  "policy": {
+    "name": "ec2-require-encrypted-volumes",
+    "resource": "ec2",
+    "mode": {
+      "type": "ec2-instance-state",
+      "role": "arn:aws:iam::701984500217:role/lambda_cloud_custodian",
+      "events": [
+        "pending"
+      ]
+    },
+    "filters": [
+      {
+        "type": "ebs",
+        "key": "Encrypted",
+        "value": false
+      }
+    ],
+    "actions": [
+      "mark",
+      "terminate"
+    ]
+  },
+  "version": "0.8.40.0",
+  "execution": {
+    "id": "bc1af265-7cb2-47fb-9c6a-0c0dfe68d644",
+    "start": 1549662730.1082098,
+    "end_time": 1549662733.893055,
+    "duration": 3.7848451137542725
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": null,
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "enforce-ebs-vol-encryption.yml"
+    ],
+    "policy_filter": null,
+    "resource_type": null,
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "lambda.CreateFunction": 1,
+    "lambda.GetAlias": 1,
+    "lambda.CreateAlias": 1,
+    "events.DescribeRule": 1,
+    "events.PutRule": 1,
+    "lambda.AddPermission": 1,
+    "events.ListTargetsByRule": 1,
+    "events.PutTargets": 1
+  },
+  "metrics": []
+}

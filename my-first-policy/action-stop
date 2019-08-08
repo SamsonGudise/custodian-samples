@@ -1,0 +1,123 @@
+[
+{
+"AmiLaunchIndex": 0,
+"ImageId": "ami-035be7bafff33b6b6",
+"InstanceId": "i-036e08241a0cf8164",
+"InstanceType": "t2.micro",
+"LaunchTime": "2019-02-07T19:41:44+00:00",
+"Monitoring": {
+"State": "disabled"
+},
+"Placement": {
+"AvailabilityZone": "us-east-1b",
+"GroupName": "",
+"Tenancy": "default"
+},
+"PrivateDnsName": "ip-172-31-48-150.ec2.internal",
+"PrivateIpAddress": "172.31.48.150",
+"ProductCodes": [],
+"PublicDnsName": "ec2-35-170-191-221.compute-1.amazonaws.com",
+"PublicIpAddress": "35.170.191.221",
+"State": {
+"Code": 16,
+"Name": "running"
+},
+"StateTransitionReason": "",
+"SubnetId": "subnet-7c877c56",
+"VpcId": "vpc-e0652384",
+"Architecture": "x86_64",
+"BlockDeviceMappings": [
+{
+"DeviceName": "/dev/xvda",
+"Ebs": {
+"AttachTime": "2019-02-07T19:41:45+00:00",
+"DeleteOnTermination": true,
+"Status": "attached",
+"VolumeId": "vol-0421b8850cd8734bc"
+}
+}
+],
+"ClientToken": "",
+"EbsOptimized": false,
+"EnaSupport": true,
+"Hypervisor": "xen",
+"NetworkInterfaces": [
+{
+"Association": {
+"IpOwnerId": "amazon",
+"PublicDnsName": "ec2-35-170-191-221.compute-1.amazonaws.com",
+"PublicIp": "35.170.191.221"
+},
+"Attachment": {
+"AttachTime": "2019-02-07T19:41:44+00:00",
+"AttachmentId": "eni-attach-0f10d4111e5e58746",
+"DeleteOnTermination": true,
+"DeviceIndex": 0,
+"Status": "attached"
+},
+"Description": "",
+"Groups": [
+{
+"GroupName": "launch-wizard-1",
+"GroupId": "sg-06a959d0baeee017c"
+}
+],
+"Ipv6Addresses": [],
+"MacAddress": "12:97:f8:d0:0d:e8",
+"NetworkInterfaceId": "eni-023a0d4db90208ae4",
+"OwnerId": "701984500217",
+"PrivateDnsName": "ip-172-31-48-150.ec2.internal",
+"PrivateIpAddress": "172.31.48.150",
+"PrivateIpAddresses": [
+{
+"Association": {
+"IpOwnerId": "amazon",
+"PublicDnsName": "ec2-35-170-191-221.compute-1.amazonaws.com",
+"PublicIp": "35.170.191.221"
+},
+"Primary": true,
+"PrivateDnsName": "ip-172-31-48-150.ec2.internal",
+"PrivateIpAddress": "172.31.48.150"
+}
+],
+"SourceDestCheck": true,
+"Status": "in-use",
+"SubnetId": "subnet-7c877c56",
+"VpcId": "vpc-e0652384"
+}
+],
+"RootDeviceName": "/dev/xvda",
+"RootDeviceType": "ebs",
+"SecurityGroups": [
+{
+"GroupName": "launch-wizard-1",
+"GroupId": "sg-06a959d0baeee017c"
+}
+],
+"SourceDestCheck": true,
+"Tags": [
+{
+"Key": "Name",
+"Value": "TestInstance"
+},
+{
+"Key": "Custodian",
+"Value": "Letstest"
+}
+],
+"VirtualizationType": "hvm",
+"CpuOptions": {
+"CoreCount": 1,
+"ThreadsPerCore": 1
+},
+"CapacityReservationSpecification": {
+"CapacityReservationPreference": "open"
+},
+"HibernationOptions": {
+"Configured": false
+},
+"c7n:MatchedFilters": [
+"tag:Custodian"
+]
+}
+]

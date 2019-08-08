@@ -1,0 +1,4 @@
+2019-02-08 14:48:25,835 - custodian.policy - INFO - policy: ec2-require-encrypted-volumes resource:ec2 region:us-east-1 count:1 time:1.14
+2019-02-08 14:50:07,912 - custodian.policy - INFO - Provisioning policy lambda ec2-require-encrypted-volumes
+2019-02-08 14:52:10,130 - custodian.policy - INFO - Provisioning policy lambda ec2-require-encrypted-volumes
+2019-02-08 14:52:10,864 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-ec2-require-encrypted-volumes

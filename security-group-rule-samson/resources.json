@@ -1,0 +1,52 @@
+[
+  {
+    "Description": "launch-wizard-2 created 2019-02-08T18:35:14.795-07:00",
+    "GroupName": "launch-wizard-2",
+    "IpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "ToPort": 22,
+        "UserIdGroupPairs": []
+      }
+    ],
+    "OwnerId": "701984500217",
+    "GroupId": "sg-081c56145c2a4dae8",
+    "IpPermissionsEgress": [
+      {
+        "IpProtocol": "-1",
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ],
+    "VpcId": "vpc-e0652384",
+    "MatchedIpPermissions": [
+      {
+        "FromPort": 22,
+        "IpProtocol": "tcp",
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ],
+        "Ipv6Ranges": [],
+        "PrefixListIds": [],
+        "UserIdGroupPairs": []
+      }
+    ]
+  }
+]

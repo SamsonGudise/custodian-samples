@@ -1,0 +1,6 @@
+2019-02-08 18:32:39,209 - custodian.policy - INFO - policy: awsconfig-policy resource:ec2 region:us-east-1 count:0 time:0.56
+2019-02-08 18:34:07,866 - custodian.policy - INFO - Provisioning policy lambda awsconfig-policy
+2019-02-08 18:34:08,735 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-awsconfig-policy
+2019-02-08 18:41:12,610 - custodian.policy - INFO - Provisioning policy lambda awsconfig-policy
+2019-02-08 18:41:50,850 - custodian.policy - INFO - Provisioning policy lambda awsconfig-policy
+2019-02-08 18:45:07,222 - custodian.policy - INFO - Provisioning policy lambda awsconfig-policy

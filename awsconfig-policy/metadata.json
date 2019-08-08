@@ -1,0 +1,61 @@
+{
+  "policy": {
+    "name": "awsconfig-policy",
+    "mode": {
+      "type": "config-rule",
+      "role": "arn:aws:iam::701984500217:role/lambda_cloud_custodian"
+    },
+    "resource": "ec2",
+    "filters": [
+      {
+        "tag:Custodian": "present"
+      }
+    ],
+    "actions": [
+      "stop"
+    ]
+  },
+  "version": "0.8.40.0",
+  "execution": {
+    "id": "a48a1039-ae70-48f6-a5a4-b9cd9dd15835",
+    "start": 1549676707.2006478,
+    "end_time": 1549676708.511658,
+    "duration": 1.3110101222991943
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": null,
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "custodian-awsconfig.yaml"
+    ],
+    "policy_filter": null,
+    "resource_type": null,
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "lambda.ListTags": 1,
+    "config.DescribeConfigRules": 1
+  },
+  "metrics": []
+}

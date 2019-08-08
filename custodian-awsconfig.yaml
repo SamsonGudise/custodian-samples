@@ -1,0 +1,10 @@
+policies:
+  - name: awsconfig-policy
+    mode:
+        type: config-rule
+        role: arn:aws:iam::701984500217:role/lambda_cloud_custodian
+    resource: ec2
+    filters:
+      - "tag:Custodian": present
+    actions:
+      - stop

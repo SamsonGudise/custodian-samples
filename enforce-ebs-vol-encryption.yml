@@ -1,0 +1,15 @@
+policies:
+  - name: ec2-require-encrypted-volumes
+    resource: ec2
+    mode:
+      type: ec2-instance-state
+      role: arn:aws:iam::701984500217:role/lambda_cloud_custodian
+      events:
+      - pending
+    filters:
+      - type: ebs
+        key: Encrypted
+        value: False
+    actions:
+      - mark
+      - terminate

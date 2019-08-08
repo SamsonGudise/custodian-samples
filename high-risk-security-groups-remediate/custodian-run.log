@@ -1,0 +1,8 @@
+2019-02-07 14:42:15,245 - custodian.policy - INFO - policy: high-risk-security-groups-remediate resource:security-group region:us-east-1 count:1 time:0.61
+2019-02-07 14:47:26,454 - custodian.policy - INFO - Provisioning policy lambda high-risk-security-groups-remediate
+2019-02-07 15:09:46,891 - custodian.policy - INFO - Provisioning policy lambda high-risk-security-groups-remediate
+2019-02-07 15:09:47,710 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-high-risk-security-groups-remediate
+2019-02-07 15:14:35,038 - custodian.policy - INFO - Provisioning policy lambda high-risk-security-groups-remediate
+2019-02-07 15:14:35,798 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-high-risk-security-groups-remediate
+2019-02-07 15:24:03,226 - custodian.policy - INFO - Provisioning policy lambda high-risk-security-groups-remediate
+2019-02-07 15:24:04,215 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-high-risk-security-groups-remediate
